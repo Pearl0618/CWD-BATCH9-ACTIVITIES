@@ -34,18 +34,78 @@
             <p>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually used for actions within a card or modal so there aren't too many overlapping shadows.</p>
             <a class="waves-effect waves-teal btn-flat">Button</a>
 
-            <h3 class="red-text text-lighten-2">Submit Button</h3>
-            <p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit</p>
-            <button href="" class="btn waves-effect-waves-light yellow darken-4" type="submit" name="action"> Submit 
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
+          <h3 class="red-text text-lighten-2">Submit Button</h3>
+              <p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit</p>
+              <button href="" class="btn waves-effect-waves-light yellow darken-4" type="submit" name="action">
+                <i class="fa-solid fa-arrow-right right"></i> Submit
+              </button>
+
+          <h3 class="red-text text-lighten-2">Large</h3>
+              <p>This button has a larger height for buttons that need more attention.</p>
+              <a href="" class="btn waves-effect-waves-light yellow darken-4 btn-large">Button</a>
+              <a href="" class="btn waves-effect-waves-light amber darken-4 btn-large"><i class="fa-solid fa-cloud left"></i> Button</a>
+              <a href="" class="btn waves-effect-waves-light orange darken-4 btn-large"><i class="fa-solid fa-cloud right"></i>Button </a>
+
+          <h3 class="red-text text-lighten-2">Small</h3>
+              <p>When mouse and keyboard are the primary input methods, this smaller button is useful for denser UI layouts.</p>
+              <a href="" class="btn waves-effect-waves-light yellow darken-4 btn-small">Button</a>
+              <a href="" class="btn waves-effect-waves-light amber darken-4 btn-small"><i class="fa-solid fa-cloud left"></i> Button</a>
+              <a href="" class="btn waves-effect-waves-light orange darken-4 btn-small"><i class="fa-solid fa-cloud right"></i>Button </a>
+          
+          <h3 class="red-text text-lighten-2">Disabled</h3>
+              <p>When mouse and keyboard are the primary input methods, this smaller button is useful for denser UI layouts.</p>
+              <a href="" class="btn waves-effect-waves-light yellow darken-4 btn-large disabled"><i class="fa-solid fa-cloud right"></i>Button</a>
+          
+        <h1 class="red-text text-lighten-2 center">Floating Action Button</h1> 
+        <div class="divider"></div>  
+        <div class="container">
+          <p>If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page.</p>
+            <div class="fixed-action-btn">
+              <a class="btn-floating btn-large red">
+                <i class="fa-solid fa-pen"></i>
+              </a>
+              <ul>
+                <li>
+                  <a class="btn-floating red">
+                    <i class="fa-solid fa-chart-column"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="btn-floating yellow darken-1">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="btn-floating green">
+                    <i class="fa-solid fa-upload"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="btn-floating blue">
+                    <i class="fa-solid fa-paperclip"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
 
         </div>
+        <div style="height: 1000px;"></div>
         <br>
         <br>
 </body>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+      $('.fixed-action-btn').floatingActionButton({
+      direction: 'left',
+      hoverEnabled: false,
+      // toolbarEnabled: true
+      });
+     
+    });
+    </script>
   </body>
 </html>

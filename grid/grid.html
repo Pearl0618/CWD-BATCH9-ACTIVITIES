@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ce896e89d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" href="style.css">
+    
+     <title>Grid System</title>
+</head>
+<body>
+    <h1 class="red-text text-lighten-2 center">Grid</h1>
+        <div class="divider"></div>
+            <div class="container">
+                    <h1 class="red-text text-lighten-2">Container</h1>
+                        <p>The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.</p>
+                    <h2 class="red-text text-lighten-2">Introduction</h2>
+                        <p>Take a look at this section to quickly understand how the grid works!</p>
+                    <h2>12 Columns</h2>
+                        <p>Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width.</p>
+                        <div class="row">
+                            <div class="col s1 grid-example">1</div>
+                            <div class="col s1 grid-example">2</div>
+                            <div class="col s1 grid-example">3</div>
+                            <div class="col s1 grid-example">4</div>
+                            <div class="col s1 grid-example">5</div>
+                            <div class="col s1 grid-example">6</div>
+                            <div class="col s1 grid-example">7</div>
+                            <div class="col s1 grid-example">8</div>
+                            <div class="col s1 grid-example">9</div>
+                            <div class="col s1 grid-example">10</div>
+                            <div class="col s1 grid-example">11</div>
+                            <div class="col s1 grid-example">12</div>
+                        </div>
+                    <h2>Columns live inside Rows</h2>
+                        <div class="row">
+                            <div class="col s12 grid-example">This div is 12-columns wide on all screen sizes</div>
+                            <div class="col s6 grid-example">6-columns (one-half)</div>
+                            <div class="col s6 grid-example">6-columns (one-half)</div>
+                        </div>
+                    <h2 class="red-text text-lighten-2">Offsets</h2>
+                        <div class="row">
+                            <div class="col s12 grid-example"><span class="flow-text">This div is 12-columns wide on all screen sizes</span></div>
+                            <div class="col s6 offset-s6 grid-example"><span class="flow-text">6-columns (offset-by-6)</span></div>
+                          </div>
+                    <h2 class="red-text text-lighten-2">Push and Pull</h2>
+                    <div class="row">
+                        <div class="col s7 push-s5 grid-example"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div>
+                        <div class="col s5 pull-s7 grid-example"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div>
+                      </div>
+
+                      <h3 class="red-text text-lighten-2">Creating Layouts</h3>
+                      <div class="row">
+                        <p>Here we will show you how to create some commonly used layouts with our grid system. Hopefully these will get you more comfortable with laying out elements. To keep these demos simple, the ones here will not be responsive.</p>
+                      
+                        <div class="col s6">
+                            <h4>Section</h4>
+                            <p>The section class is used for simple top and bottom padding. Just add the section class to your div's containing large blocks of content.</p>
+                        </div>
+                        <div class="col s6">
+                            <h4>Divider
+                            </h4>
+                            <p>Dividers are 1 pixel lines that help break up your content. Just add the divider to a div in between your content.</p>
+                        </div>
+                      </div>
+
+                      <h3>Example Sections and Dividers</h3>
+                      <div class="divider"></div>
+                      <div class="section">
+                        <h5>Section 1</h5>
+                        <p>Stuff</p>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="section">
+                        <h5>Section 2</h5>
+                        <p>Stuff</p>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="section">
+                        <h5>Section 3</h5>
+                        <p>Stuff</p>
+                      </div>
+            </div>
+           
+
+</body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      // var instance = M.Tabs.init(el, options);
+      // Or with jQuery
+      $(document).ready(function(){
+        $('.tabs').tabs();
+        $('.sidenav').sidenav();
+        $(".dropdown-trigger").dropdown();
+      });
+    </script>
+  </body>
+</html>

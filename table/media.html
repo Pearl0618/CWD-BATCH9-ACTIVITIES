@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" href="style.css">
+    <title>Tables and Media</title>
+</head>
+<body>
+    <h1 class="center red-text text-lighten-2">Media CSS</h1>
+        <div class="divider"></div>
+                <div class="container">
+                    <h3 class="red-text text-lighten-2">Images</h3>
+                    <p>Tables are a nice way to organize a lot of data. We provide a few utility classes 
+                        to help you style your table as easily as possible. In addition, to improve mobile 
+                        experience, all tables on mobile-screen widths are centered automatically.</p>
+                    <p class="flow-text">Responsive Images</p>
+                    <p>To make images resize responsively to page width, you can add the class
+                    <code>responsive-img</code> to your image tag. It will now have a <code>max-width: 100%</code> and <code>height:auto</code>.</p>
+                    <p class="flow-text">Circular images</p>
+                        <div class="col s12 m8 offset-m2 l6 offset-l3">
+                            <div class="card-panel grey lighten-5 z-depth-1">
+                                <div class="row valign-wrapper">
+                                        <div class="col s2">
+                                            <img src="doughnut150.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                                        </div>
+                                        <div class="col s10">
+                                            <span class="black-text">
+                                                This is a square image. Add the "circle" class to it to make it appear circular.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <p>To make images appear circular, simply add <code>class="circle"</code> to them</p>
+                        <h3 class="red-text text-lighten-2">Videos</h3>
+                        <p>We provide a container for Embedded Videos that resizes them responsively.</p>
+                        <p class="flow-text">Responsive Embeds</p>
+                        <p>To make your embeds responsive, merely wrap them with a containing div which has the class 
+                            <code>video-container</code></p>
+                            <div class="video-container">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/J1oQJQfNS9Y" 
+                                title="Donuts master with 30 years of experience! Fantastic Original American Donuts / Korean street food" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                            </div>
+                        <br>
+                        <p class="flow-text">Responsive Videos</p>
+                        <p>To make your HTML5 Videos responsive just add the class <code>responsive-video</code> to the video tag.</p>
+                        <video class="responsive-video" controls>
+                            <iframe width="942" height="530" src="https://www.youtube.com/embed/a8LWRUrQTAs" title="Banana chacha by momoland dance!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </video>
+                        <br>
+                        <h1 class="center red-text text-lighten-2">Media</h1>
+                            <div class="divider"></div>
+                            <p>Media components include things that have to do with large media objects like Images, Video, Audio, etc.</p>
+                            <h3 class="red-text text-lighten-2">Material Box</h3>
+                            <p>Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can 
+                                be enlarged, Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, 
+                                the user can either click on the image again, scroll away, or press the ESC key.</p>
+                                <img class="materialboxed responsive-img" width="650" src="pink.jpg">
+                        
+                                <br><br>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+        });
+    </script>
+</body>
+</html>

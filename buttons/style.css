@@ -1,0 +1,14 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+}
+
+.col.grid-example {
+    border: 1px solid #eee;
+    margin: 7px 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    background-color: rgb(18, 0, 131);
+    color: white;
+    padding: 0;
+}
